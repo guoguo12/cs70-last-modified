@@ -24,7 +24,7 @@ $.get('notes', function(data) {
       if (new Date().getTime() - Date.parse(date) < 7 * 24 * 60 * 60 * 1000) {
         fileLine.parent().append('<br><b style="padding-left:10px;color:#F37;font-size:11px">Last Modified: ' + date + '</b>');
       } else {
-              fileLine.parent().append('<br><b style="padding-left:10px;color:#555;font-size:11px">Last Modified: ' + date + '</b>');
+        fileLine.parent().append('<br><b style="padding-left:10px;color:#555;font-size:11px">Last Modified: ' + date + '</b>');
       }
     }
   }
