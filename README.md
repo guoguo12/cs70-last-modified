@@ -37,7 +37,7 @@ Screenshot
 
 Here's what the result should look like:
 
-![Screenshot](https://i.imgur.com/qnEA5Xi.png)
+![Screenshot](https://i.imgur.com/obbh8RR.png)
 
 Development
 -------
