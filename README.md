@@ -2,6 +2,7 @@ cs70-last-modified
 ==================
 
 Script for adding last-modified information to the [CS 70 homepage](https://inst.eecs.berkeley.edu/~cs70/fa14/).
+**This is a work in progress!**
 
 * **add-last-modified.min.js** is the production/minified version.
 * **add-last-modified.js** is the development/unminified version.
@@ -10,6 +11,8 @@ Instructions
 ------------
 
 ### Server-side (for the instructors)
+
+This is for if the CS 70 instructors want to add this feature for all viewers.
 
 Copy the contents of [add-last-modified.min.js](https://github.com/guoguo12/cs70-last-modified/blob/master/add-last-modified.min.js) into the CS 70 homepage HTML file.
 
