@@ -32,6 +32,13 @@ $.get("notes",function(e){for(var n=[],t=[],a=e.split("\n"),r=0;r<a.length;r++){
 
 The last-modified information should now be visible in the "Notes" section!
 
+Screenshot
+-------
+
+Here's what the result should look like:
+
+![Screenshot](https://i.imgur.com/qnEA5Xi.png)
+
 Development
 -------
 
