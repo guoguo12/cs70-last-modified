@@ -21,7 +21,11 @@ $.get('notes', function(data) {
     var date = dates[i];
     var fileLine = $('a[href="notes/' + name);
     if (fileLine) {
-      fileLine.append(' <b style="color: #F37;font-size:12px">Last Modified ' + date + '</b>');
+      if (new Date().getTime() - Date.parse(date) < 7 * 24 * 60 * 60 * 1000) {
+        fileLine.parent().append('<br><b style="padding-left:10px;color:#F37;font-size:11px">Last Modified: ' + date + '</b>');
+      } else {
+              fileLine.parent().append('<br><b style="padding-left:10px;color:#555;font-size:11px">Last Modified: ' + date + '</b>');
+      }
     }
   }
 });
