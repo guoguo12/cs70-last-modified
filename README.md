@@ -27,7 +27,7 @@ var script=document.createElement("script");script.src="https://ajax.googleapis.
 Then, type `javascript:` into the URL bar (again), paste the following, and press Enter:
 
 ```
-$.get("notes",function(e){for(var t=[],a=[],n=e.split("\n"),p=0;p<n.length;p++){var r=n[p],i=new RegExp('.pdf">(.*?)</a>').exec(r);if(i){var o=i[1],f=new RegExp('align="right">(.*?)  </td>').exec(r);t.push(o),a.push(f[1])}}for(var p=0;p<t.length;p++){var o=t[p],s=a[p],d=$('a[href="notes/'+o);d&&d.parent().append((new Date).getTime()-Date.parse(s)<6048e5?'<br><b style="padding-left:10px;color:#F37;font-size:11px">Last Modified: '+s+"</b>":'<br><b style="padding-left:10px;color:#555;font-size:11px">Last Modified: '+s+"</b>")}});
+$.get("notes",function(e){for(var t=[],a=[],n=e.split("\n"),p=0;p<n.length;p++){var r=n[p],i=new RegExp('.pdf">(.*?)</a>').exec(r);if(i){var o=i[1],f=new RegExp('align="right">(.*?)  </td>').exec(r);t.push(o),a.push(f[1])}}for(var p=0;p<t.length;p++){var o=t[p],s=a[p],d=$('a[href="notes/'+o+'"]');d&&d.parent().append((new Date).getTime()-Date.parse(s)<6048e5?'<br><b style="padding-left:10px;color:#F37;font-size:11px">Last Modified: '+s+"</b>":'<br><b style="padding-left:10px;color:#555;font-size:11px">Last Modified: '+s+"</b>")}});
 ```
 
 The last-modified information should now be visible in the "Notes" section!
